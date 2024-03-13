@@ -38,15 +38,15 @@ CTkLabel(master=app, text="Take A Quiz", font=("Arial Bold", 20), justify="left"
 quizzes_frame = CTkFrame(master=app, fg_color="transparent")
 quizzes_frame.pack(pady=(21, 0), padx=(50, 0), anchor="nw")
 
-movies_img_data = Image.open("movies-quiz-bg.png")
+movies_img_data = Image.open("Quiz\movies-quiz-bg.png")
 movies_img = CTkImage(light_image=movies_img_data, dark_image=movies_img_data, size=(234,91))
 CTkLabel(master=quizzes_frame, text="", image=movies_img,corner_radius=8).grid(row=0, column=0, sticky="nw")
 
-sports_img_data = Image.open("sports-quiz-bg.png")
+sports_img_data = Image.open("Quiz\sports-quiz-bg.png")
 sports_img = CTkImage(light_image=sports_img_data, dark_image=sports_img_data, size=(234,91))
 CTkLabel(master=quizzes_frame, text="", image=sports_img,corner_radius=8).grid(row=1, column=0, sticky="nw", pady=(30, 0))
 
-geography_img_data = Image.open("geography-quiz-bg.png")
+geography_img_data = Image.open("Quiz\geography-quiz-bg.png")
 geography_img = CTkImage(light_image=geography_img_data, dark_image=geography_img_data, size=(175,210))
 CTkLabel(master=quizzes_frame, text="", image=geography_img,corner_radius=8).grid(row=0, column=1, rowspan=2,  sticky="nw")
 
